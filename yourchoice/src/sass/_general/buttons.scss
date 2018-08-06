@@ -1,0 +1,7 @@
+.button-orange{
+  background: none;
+  border: thin solid $orange;
+  @include text-styling($secondary-font, $regular, 1rem, $orange);
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+}

@@ -13,10 +13,11 @@ h1{
 }
 
 h2{
-
+  @include text-styling($primary-font, $bold, 3rem, $blue);
 }
 
 h3{
+  @include text-styling($secondary-font, $bold, 2rem, $orange);
 
 }
 
@@ -26,4 +27,17 @@ h4{
 
 h5{
 
+}
+
+p{
+  @include text-styling($secondary-font, $regular, 1rem, $darkgrey);
+}
+
+.background-number{
+  @include text-styling($secondary-font, $bold, 10rem, $white);
+  opacity: 0.5;
+}
+
+.offcanvas-link{
+  @include text-styling($primary-font, $bold, 3rem, $white);
 }
