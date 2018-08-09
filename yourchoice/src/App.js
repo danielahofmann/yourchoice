@@ -40,8 +40,8 @@ class App extends Component {
                             <h1 className="hero-headline">mehr als nur werbung.</h1>
                         </div>
                     </Section>
-                    <Section color="#A7DBD8"></Section>
-                    <Section color="#E0E4CC">Page 3</Section>
+                    <Section></Section>
+                    <Section>Page 3</Section>
                 </SectionsContainer>
             </main>
             <footer>
