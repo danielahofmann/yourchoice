@@ -9,6 +9,7 @@ import OffCanvasNavigation from './Components/OffCanvasNavigation';
 import ContentLeft from './Components/ContentLeft';
 import ContentRight from './Components/ContentRight';
 import Footer from './Components/Footer';
+import FullpageWrapper from './Components/FullpageWrapper';
 
 
 class App extends Component {
@@ -19,7 +20,7 @@ class App extends Component {
 
             </header>
             <main>
-
+                <FullpageWrapper />
             </main>
             <footer>
 
