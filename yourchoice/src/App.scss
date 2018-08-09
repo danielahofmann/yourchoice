@@ -2,9 +2,21 @@
     IMPORTS
  */
 
-@import "sass/_general/variables";
-@import "sass/_general/mixins";
-@import "sass/_general/typography";
-@import "sass/_general/buttons";
-@import "sass/_general/helper";
+@import "sass/_general/variables.scss";
+@import "sass/_general/mixins.scss";
+@import "sass/_general/typography.scss";
+@import "sass/_general/buttons.scss";
+@import "sass/_general/helper.scss";
 
+.container{
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+header{
+  position: fixed;
+  z-index: 1;
+  padding: 1rem 0;
+  background-color: $white;
+  width: 100%;
+}

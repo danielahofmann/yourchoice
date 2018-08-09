@@ -35,7 +35,7 @@ class App extends Component {
             <main>
                 <SectionsContainer className="container" {...options}>
                     <Section className="custom-section" verticalAlign="true" color="#69D2E7">Page 1</Section>
-                    <Section color="#A7DBD8">Page 2</Section>
+                    <Section color="#A7DBD8"></Section>
                     <Section color="#E0E4CC">Page 3</Section>
                 </SectionsContainer>
             </main>
