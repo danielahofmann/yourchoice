@@ -4,33 +4,51 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 16px; }
 
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #3399FF; }
+
 h2 {
-  font-family: "Playfair Display", Lora, serif;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
   font-size: 3rem;
   color: #3399FF; }
 
 h3 {
-  font-family: "Raleway", Helvetica, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 2rem;
   color: #FA9917; }
 
 p {
-  font-family: "Raleway", Helvetica, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   color: #4A4A4A; }
 
 .background-number {
-  font-family: "Raleway", Helvetica, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 10rem;
   color: #FFFFFF;
   opacity: 0.5; }
 
 .offcanvas-link {
-  font-family: "Playfair Display", Lora, serif;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
   font-size: 3rem;
   color: #FFFFFF; }
+
+.hero-headline {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #3399FF;
+  width: 100%;
+  text-align: center; }
