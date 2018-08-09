@@ -1,0 +1,20 @@
+.number-top-right {
+  top: -10%;
+  right: -1%; }
+
+.number-top-left {
+  top: -10%;
+  left: -1%; }
+
+.number-bottom-left {
+  bottom: -10%;
+  left: -1%; }
+
+.number-bottom-right {
+  bottom: 10%;
+  right: -1%; }
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center; }

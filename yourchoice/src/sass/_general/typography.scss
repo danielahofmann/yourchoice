@@ -51,3 +51,11 @@ p{
   width: 100%;
   text-align: center;
 }
+
+.background-number{
+  position: absolute;
+  @include text-styling($secondary-font, $boldest, 50rem, $white);
+  font-weight: 900;
+  opacity: 0.5;
+  line-height: 575px;
+}

@@ -52,3 +52,13 @@ p {
   color: #3399FF;
   width: 100%;
   text-align: center; }
+
+.background-number {
+  position: absolute;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 50rem;
+  color: #FFFFFF;
+  font-weight: 900;
+  opacity: 0.5;
+  line-height: 575px; }
