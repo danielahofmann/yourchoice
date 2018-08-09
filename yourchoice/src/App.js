@@ -31,7 +31,6 @@ class App extends Component {
                 <a href="#sectionOne" className="opa">Section One</a>
                 <a href="#sectionTwo">Section Two</a>
                 <a href="#sectionThree">Section Three</a>
-                <OffCanvas />
             </header>
             <main>
                 <SectionsContainer className="container" {...options}>
