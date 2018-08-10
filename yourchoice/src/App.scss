@@ -135,23 +135,3 @@ header{
 .right-image{
   right: 0;
 }
-
-.video-button{
-  opacity: 0;
-  position: absolute;
-  bottom: 8%;
-  background: none;
-  border: none;
-  outline: none;
-  @include text-styling($secondary-font, $bold, 0.75rem, $darkgrey);
-  color: $white;
-  transition:All 1s ease;
-  -webkit-transition:All 1s ease;
-  -moz-transition:All 1s ease;
-  -o-transition:All 1s ease;
-}
-
-.video-title{
-  font-weight: $regular;
-  padding-left: 0.5rem;
-}

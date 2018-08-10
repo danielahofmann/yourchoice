@@ -19,11 +19,12 @@ h1 {
   font-size: 2rem;
   color: #3399FF; }
 
-h3 {
+.headline3 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 2rem;
-  color: #FA9917; }
+  color: #FA9917;
+  text-align: center; }
 
 p {
   font-family: "Raleway", sans-serif;
@@ -66,7 +67,12 @@ p {
   opacity: 0.5;
   line-height: 575px; }
 
+.video-title {
+  font-weight: 400;
+  padding-left: 0.5rem; }
+
 .button-orange {
+  display: inline-block;
   background: none;
   border: thin solid #FA9917;
   font-family: "Raleway", sans-serif;
@@ -74,7 +80,32 @@ p {
   font-size: 1rem;
   color: #FA9917;
   text-transform: uppercase;
-  padding: 0.5rem 1rem; }
+  padding: 0.5rem 1rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  text-align: center; }
+  .button-orange:hover {
+    background: #FA9917;
+    color: #FFFFFF;
+    font-weight: 500;
+    text-decoration: none; }
+
+.video-button {
+  opacity: 0;
+  position: absolute;
+  bottom: 8%;
+  background: none;
+  border: none;
+  outline: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: #4A4A4A;
+  color: #FFFFFF;
+  transition: All 1s ease;
+  -webkit-transition: All 1s ease;
+  -moz-transition: All 1s ease;
+  -o-transition: All 1s ease; }
 
 .number-top-right {
   top: -10%;
@@ -108,6 +139,15 @@ p {
 
 .padding-left-2-5 {
   padding-left: 2.5rem !important; }
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.margin-bottom-2 {
+  margin-bottom: 2rem; }
 
 .container {
   max-width: 100% !important;
@@ -214,24 +254,3 @@ header {
 
 .right-image {
   right: 0; }
-
-.video-button {
-  opacity: 0;
-  position: absolute;
-  bottom: 8%;
-  background: none;
-  border: none;
-  outline: none;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 0.75rem;
-  color: #4A4A4A;
-  color: #FFFFFF;
-  transition: All 1s ease;
-  -webkit-transition: All 1s ease;
-  -moz-transition: All 1s ease;
-  -o-transition: All 1s ease; }
-
-.video-title {
-  font-weight: 400;
-  padding-left: 0.5rem; }

@@ -16,8 +16,9 @@ h1{
   @include text-styling($primary-font, $bold, 2rem, $blue);
 }
 
-h3{
+.headline3{
   @include text-styling($secondary-font, $bold, 2rem, $orange);
+  text-align: center;
 
 }
 
@@ -58,4 +59,9 @@ p{
   font-weight: 900;
   opacity: 0.5;
   line-height: 575px;
+}
+
+.video-title{
+  font-weight: $regular;
+  padding-left: 0.5rem;
 }

@@ -2,9 +2,34 @@
 @import "mixins.scss";
 
 .button-orange{
+  display: inline-block;
   background: none;
   border: thin solid $orange;
   @include text-styling($secondary-font, $regular, 1rem, $orange);
   text-transform: uppercase;
   padding: 0.5rem 1rem;
+  @include margin-left;
+  text-align: center;
+
+  &:hover{
+    background: $orange;
+    color: $white;
+    font-weight: $medium;
+    text-decoration: none;
+  }
+}
+
+.video-button{
+  opacity: 0;
+  position: absolute;
+  bottom: 8%;
+  background: none;
+  border: none;
+  outline: none;
+  @include text-styling($secondary-font, $bold, 0.75rem, $darkgrey);
+  color: $white;
+  transition:All 1s ease;
+  -webkit-transition:All 1s ease;
+  -moz-transition:All 1s ease;
+  -o-transition:All 1s ease;
 }
