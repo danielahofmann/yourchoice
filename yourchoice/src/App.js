@@ -29,6 +29,8 @@ class App extends Component {
   render() {
     return (
         <div className="App">
+            <OffCanvas/>
+
             <header className="App-header">
                 <OffCanvasNavigation/>
             </header>

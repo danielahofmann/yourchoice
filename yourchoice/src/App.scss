@@ -154,3 +154,46 @@ header{
     height: 0.5rem;
   }
 }
+
+.offcanvas{
+  z-index: 100;
+  height: 100vh;
+  width: 100%;
+  background-color: $blue;
+  position: absolute;
+
+  .relative {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    .offcanvas-image {
+      height: 100vh;
+    }
+
+    .offcanvas-menu {
+      padding-right: 3rem;
+      padding-top: 1rem;
+      float: right;
+
+      img {
+        width: 0.5rem;
+      }
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+
+    .offcanvas-nav {
+      display: inline-block;
+      position: absolute;
+      bottom: 10%;
+      right: 0;
+      a{
+        display: block;
+
+      }
+    }
+  }
+}

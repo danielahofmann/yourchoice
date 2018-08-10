@@ -39,8 +39,27 @@ p {
 .offcanvas-link {
   font-family: "Playfair Display", serif;
   font-weight: 700;
-  font-size: 3rem;
-  color: #FFFFFF; }
+  font-size: 5rem;
+  color: #FFFFFF;
+  text-align: right;
+  padding: 1rem 2rem;
+  transition: All 0.5s ease;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1); }
+  .offcanvas-link:hover {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    -webkit-transform: scale(1.025);
+    -moz-transform: scale(1.025);
+    -o-transform: scale(1.025);
+    -ms-transform: scale(1.025); }
 
 .hero-headline {
   position: absolute;
