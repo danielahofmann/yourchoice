@@ -11,7 +11,7 @@
 .container{
   max-width: 100% !important;
   padding: 0 !important;
-  background-color: $light-grey;
+//  background-color: $light-grey;
   overflow: hidden;
 }
 
@@ -38,6 +38,11 @@ header{
 .section{
   position: relative;
   overflow: hidden !important;
+  background-color: $light-grey;
+
+  &:last-child{
+    background-color: $white;
+  }
 }
 
 .content-card{
