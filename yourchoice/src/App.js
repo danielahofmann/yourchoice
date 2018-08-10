@@ -15,14 +15,14 @@ import pragmatiker from './img/Vision Pragmatiker_Standbild.png';
 
 
 let options = {
-    sectionClassName:     'section',
-    anchors:              ['sectionOne', 'sectionTwo', 'sectionThree', 'sectionFour', 'sectionFive', 'sectionSix', 'sectionSeven'],
-    scrollBar:            false,
-    navigation:           true,
-    verticalAlign:        false,
-    sectionPaddingTop:    '50px',
-    sectionPaddingBottom: '0px',
-    arrowNavigation:      false,
+    sectionClassName:       'section',
+    anchors:                ['sectionOne', 'sectionTwo', 'sectionThree', 'sectionFour', 'sectionFive', 'sectionSix', 'sectionSeven'],
+    scrollBar:              false,
+    navigation:             true,
+    verticalAlign:          false,
+    sectionPaddingTop:      '50px',
+    sectionPaddingBottom:   '0px',
+    arrowNavigation:        false,
 };
 
 class App extends Component {
@@ -72,15 +72,48 @@ class App extends Component {
                     </Section>
                     <Section>
                         <p className="background-number number-bottom-right">3</p>
+                        <ContentLeft
+                            headline="Visionär oder Pragmatiker?"
+                            description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                            est Lorem ipsum dolor sit amet."
+                            firstOption="Pragmatiker"
+                            imageFirst={pragmatiker}
+                            scndOption="Visionär"
+                            imageScnd={hipster}
+                        />
                     </Section>
                     <Section>
                         <p className="background-number number-top-left">4</p>
+                        <ContentRight
+                            headline="something"
+                            description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                            est Lorem ipsum dolor sit amet."
+                            firstOption="Pragmatiker"
+                            imageFirst={pragmatiker}
+                            scndOption="Visionär"
+                            imageScnd={hipster}
+                        />
                     </Section>
                     <Section>
                         <p className="background-number number-top-right">5</p>
+                        <ContentLeft
+                            headline="Visionär oder Pragmatiker?"
+                            description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                            est Lorem ipsum dolor sit amet."
+                            firstOption="Pragmatiker"
+                            imageFirst={pragmatiker}
+                            scndOption="Visionär"
+                            imageScnd={hipster}
+                        />
                     </Section>
                     <Section>
-                        <p>Footer</p>
+                        <Footer />
                     </Section>
 
                 </SectionsContainer>
