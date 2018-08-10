@@ -16,7 +16,7 @@ import pragmatiker from './img/Vision Pragmatiker_Standbild.png';
 
 let options = {
     sectionClassName:       'section',
-    anchors:                ['sectionOne', 'sectionTwo', 'sectionThree', 'sectionFour', 'sectionFive', 'sectionSix', 'sectionSeven'],
+    anchors:                ['hero', 'section1', 'section2', 'section3', 'section4', 'section5', 'footer'],
     scrollBar:              false,
     navigation:             true,
     verticalAlign:          false,
@@ -30,9 +30,7 @@ class App extends Component {
     return (
         <div className="App">
             <header className="App-header">
-                <a href="#sectionOne" className="opa">Section One</a>
-                <a href="#sectionTwo">Section Two</a>
-                <a href="#sectionThree">Section Three</a>
+                <OffCanvasNavigation/>
             </header>
             <main>
                 <SectionsContainer className="container" {...options}>
