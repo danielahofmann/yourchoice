@@ -289,7 +289,8 @@ header {
   height: 100vh;
   width: 100%;
   background-color: #3399FF;
-  position: absolute; }
+  position: absolute;
+  top: -100%; }
   .offcanvas .relative {
     height: 100%;
     width: 100%;
