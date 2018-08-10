@@ -67,10 +67,6 @@ p {
   opacity: 0.5;
   line-height: 575px; }
 
-.video-title {
-  font-weight: 400;
-  padding-left: 0.5rem; }
-
 .button-orange {
   display: inline-block;
   background: none;
@@ -254,3 +250,17 @@ header {
 
 .right-image {
   right: 0; }
+
+.video-title {
+  font-weight: 400;
+  padding-left: 0.5rem; }
+
+.logo {
+  height: 2rem;
+  padding-left: 3rem; }
+
+.menu {
+  padding-right: 3rem;
+  float: right; }
+  .menu img {
+    height: 0.5rem; }

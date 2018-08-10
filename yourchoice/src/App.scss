@@ -135,3 +135,22 @@ header{
 .right-image{
   right: 0;
 }
+
+.video-title{
+  font-weight: $regular;
+  padding-left: 0.5rem;
+}
+
+.logo{
+  height: 2rem;
+  padding-left: 3rem;
+}
+
+.menu{
+  padding-right: 3rem;
+  float: right;
+
+  img{
+    height: 0.5rem;
+  }
+}
