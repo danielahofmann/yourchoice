@@ -46,6 +46,7 @@ class App extends Component {
                     </Section>
                     <Section>
                         <p className="background-number number-top-left">2</p>
+                        <ContentRight />
                     </Section>
                     <Section>
                         <p className="background-number number-bottom-right">3</p>
