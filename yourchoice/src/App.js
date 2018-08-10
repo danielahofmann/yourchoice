@@ -14,7 +14,7 @@ import {SectionsContainer, Section} from 'react-fullpage';
 
 let options = {
     sectionClassName:     'section',
-    anchors:              ['sectionOne', 'sectionTwo', 'sectionThree', 'sectionFour', 'sectionFive', 'sectionSix'],
+    anchors:              ['sectionOne', 'sectionTwo', 'sectionThree', 'sectionFour', 'sectionFive', 'sectionSix', 'sectionSeven'],
     scrollBar:            false,
     navigation:           true,
     verticalAlign:        false,
@@ -55,6 +55,9 @@ class App extends Component {
                     </Section>
                     <Section>
                         <p className="background-number number-top-right">5</p>
+                    </Section>
+                    <Section>
+                        <p>Footer</p>
                     </Section>
 
                 </SectionsContainer>
