@@ -1,7 +1,4 @@
 import React from 'react';
-import hipster from '../img/Vision Hipster_Standbild.png';
-import pragmatiker from '../img/Vision Pragmatiker_Standbild.png';
-
 
 const contentLeft = (props) => {
     return (
