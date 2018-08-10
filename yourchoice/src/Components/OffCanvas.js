@@ -11,7 +11,6 @@ const offcanvas = () => {
                     <img src={menu} alt="Menü" className=""/>
                 </div>
                 <img src={image} alt="It's your choice" className="offcanvas-image"/>
-                <p>hekrjwier</p>
                 <div className="offcanvas-nav">
                     <a href="https://www.google.de" className="offcanvas-link">die agentur.</a>
                     <a href="#section1" className="offcanvas-link">die storyline.</a>
