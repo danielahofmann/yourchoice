@@ -125,8 +125,8 @@ header {
   overflow: hidden !important; }
 
 .content-card {
-  width: 50%;
-  height: 10rem;
+  width: 75%;
+  height: 40vh;
   background-color: #FFFFFF;
   display: inline-block;
   position: absolute;
