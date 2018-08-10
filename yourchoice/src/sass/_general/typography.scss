@@ -12,8 +12,8 @@ h1{
   @include text-styling($primary-font, $bold, 3rem, $blue);
 }
 
-h2{
-  @include text-styling($primary-font, $bold, 3rem, $blue);
+.headline2{
+  @include text-styling($primary-font, $bold, 2rem, $blue);
 }
 
 h3{
