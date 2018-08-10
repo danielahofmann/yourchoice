@@ -283,6 +283,8 @@ header {
   float: right; }
   .menu img {
     height: 0.5rem; }
+  .menu:hover {
+    cursor: pointer; }
 
 .offcanvas {
   z-index: 100;
@@ -290,7 +292,8 @@ header {
   width: 100%;
   background-color: #3399FF;
   position: absolute;
-  top: -100%; }
+  top: -100%;
+  opacity: 0; }
   .offcanvas .relative {
     height: 100%;
     width: 100%;
@@ -312,3 +315,9 @@ header {
       right: 0; }
       .offcanvas .relative .offcanvas-nav a {
         display: block; }
+
+.youtube-modal {
+  z-index: 100 !important;
+  width: 100%;
+  height: 100vh;
+  display: none; }

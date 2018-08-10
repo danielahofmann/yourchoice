@@ -9,6 +9,7 @@ import OffCanvasNavigation from './Components/OffCanvasNavigation';
 import ContentLeft from './Components/ContentLeft';
 import ContentRight from './Components/ContentRight';
 import Footer from './Components/Footer';
+import VideoModal from './Components/VideoModal';
 import {SectionsContainer, Section} from 'react-fullpage';
 import hipster from './img/Vision Hipster_Standbild.png';
 import pragmatiker from './img/Vision Pragmatiker_Standbild.png';
@@ -55,6 +56,7 @@ class App extends Component {
                             scndOption="Visionär"
                             imageScnd={hipster}
                         />
+                        <VideoModal />
                     </Section>
                     <Section>
                         <p className="background-number number-top-left">2</p>
