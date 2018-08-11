@@ -35,7 +35,8 @@ class App extends Component {
     return (
         <div className="App">
             <OffCanvas/>
-
+            <VideoModal />
+            
             <header className="App-header">
                 <OffCanvasNavigation/>
             </header>
@@ -60,7 +61,6 @@ class App extends Component {
                             scndOption="Visionär"
                             imageScnd={hipster}
                         />
-                        <VideoModal />
                     </Section>
                     <Section>
                         <p className="background-number number-top-left">2</p>
