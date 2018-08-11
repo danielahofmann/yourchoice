@@ -12,20 +12,6 @@ class VideoFullFrame extends Component {
         }
     }
 
-    end = (e) => {
-        console.log(this.props);
-        if(this.props.section < 1){
-            document.querySelector('.hide').classList.remove('hide')
-            console.log(e);
-        }
-        if(this.props.section == 1){
-            this.props.endVideo();
-        }
-        if(this.props.section == 2){
-            document.querySelector('.VideoFullFrame').classList.add('hide');
-        }
-    };
-
     render() {
         const opts = {
             height: '100%',
@@ -47,6 +33,21 @@ class VideoFullFrame extends Component {
             </div>
         )
     }
+
+    end = (e) => {
+        console.log(this.props);
+        if(this.props.section < 1){
+            document.querySelector('.hide').classList.remove('hide')
+            console.log(e);
+        }
+        if(this.props.section == 1){
+            this.props.endVideo();
+            return;
+        }
+        if(this.props.section == 2){
+            document.querySelector('.VideoFullFrame').classList.add('hide');
+        }
+    };
 }
 
 export default VideoFullFrame;

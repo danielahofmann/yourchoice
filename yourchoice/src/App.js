@@ -91,7 +91,7 @@ class App extends Component {
 
         this.setState({
             currentVideoId: this.state.video[1].endVideoId,
-            //videoSection: 2
+            videoSection: 2
         });
     }
 
