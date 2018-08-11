@@ -4,7 +4,7 @@ import { X } from 'react-feather';
 
 class VideoFullFrame extends Component {
     state = {
-
+        currentVideoId: ''
     }
 
     render() {
@@ -13,15 +13,12 @@ class VideoFullFrame extends Component {
             width: '100%',
             playerVars: {
                 autoplay: 1,
-                hl: de
+                hl: 'de'
             }
         };
 
         return (
             <div className="VideoFullFrame">
-                <button className="icon-button">
-                    <X />
-                </button>
                 <YouTube
                     videoId="61yrZiWPXsQ"
                     opts={opts}

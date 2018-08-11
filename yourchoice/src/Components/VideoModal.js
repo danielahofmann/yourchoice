@@ -9,7 +9,7 @@ class VideoModal extends React.Component {
             width: '50%',
             playerVars: { // https://developers.google.com/youtube/player_parameters
                 autoplay: 1,
-                hl: de
+                hl: 'de'
             }
         };
 
