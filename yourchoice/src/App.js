@@ -33,6 +33,7 @@ class App extends Component {
 
         this.state = {
             modalVideoId: '',
+            videoOver: false,
             videoSection: 0,
             //variable with default-video-id for the beginning of the video
             currentVideoId:'HsisZfKRWW4',
@@ -82,7 +83,7 @@ class App extends Component {
     setEndVideo = () => {
         this.setState({
             currentVideoId: this.state.video[1].endVideoId,
-            videoSection: 2
+            videoOver: true
         });
     }
 
@@ -98,6 +99,7 @@ class App extends Component {
                 videoId={this.state.currentVideoId}
                 section={this.state.videoSection}
                 endVideo={this.setEndVideo}
+                videoOver={this.state.videoOver}
             />
             <OffCanvas/>
 
