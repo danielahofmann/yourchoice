@@ -34,11 +34,17 @@ class App extends Component {
         this.state = {
             modalVideoId: '',
             currentVideoId: 'npdNujqSdkY',
-            newVideo: [
+            video: [
                 {
                     videoOption1: 'visionär',
                     firstVideoId: 'gKUhOGgG6Wk',
                     videoOption2: 'pragmatiker',
+                    secondVideoId: '-zDnbfEHAL4'
+                },
+                {
+                    videoOption1: 'Hulapalu',
+                    firstVideoId: 'gKUhOGgG6Wk',
+                    videoOption2: 'Dongsidängsi',
                     secondVideoId: '-zDnbfEHAL4'
                 }
             ]
