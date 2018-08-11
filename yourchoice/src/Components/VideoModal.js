@@ -1,8 +1,21 @@
 import React from 'react';
 import YouTube from 'react-youtube';
+import $ from 'jquery';
+
 import { X } from 'react-feather';
+import offcanvas from "./OffCanvas";
 
 class VideoModal extends React.Component {
+    hideModal = () => {
+        let modal = document.getElementsByClassName('youtube-modal')
+        $(modal).fadeOut({queue: false, duration: 250});
+        $(modal).css({opacity: '0'});
+    };
+
+    _onEnd = () => {
+        this.hideModal();
+    };
+
     render() {
         const opts = {
             height: '50%',
@@ -14,21 +27,17 @@ class VideoModal extends React.Component {
 
         return (
             <div className="youtube-modal">
-                <button className="icon-button">
+                <button className="icon-button" onClick={this.hideModal}>
                     <X />
                 </button>
                 <YouTube
-                    videoId="aFO9FhxrP5s"
+                    videoId={this.props.videoId}
                     opts={opts}
                     onReady={this._onReady}
+                    onEnd={this._onEnd}
                 />
             </div>
         );
-    }
-
-    _onReady(event) {
-        // access to player in all event handlers via event.target
-        event.target.pauseVideo();
     }
 }
 

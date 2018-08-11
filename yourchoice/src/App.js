@@ -13,6 +13,7 @@ import VideoModal from './Components/VideoModal';
 import {SectionsContainer, Section} from 'react-fullpage';
 import hipster from './img/Vision Hipster_Standbild.png';
 import pragmatiker from './img/Vision Pragmatiker_Standbild.png';
+import $ from "jquery";
 
 
 let options = {
@@ -31,11 +32,28 @@ class App extends Component {
         modalVideoId: ''
     };
 
+    setModalId = (e) => {
+        console.log(e.currentTarget.dataset.video);
+        let id = e.currentTarget.dataset.video;
+
+        this.setState({
+            modalVideoId: id
+        });
+
+        let modal = document.getElementsByClassName('youtube-modal');
+        $(modal).fadeIn({queue: false, duration: 250});
+        $(modal).css({opacity: '1'});
+
+        console.log(this.state.modalVideoId);
+    };
+
   render() {
     return (
         <div className="App">
             <OffCanvas/>
-            <VideoModal />
+            <VideoModal
+                videoId={this.state.modalVideoId}
+            />
             
             <header className="App-header">
                 <OffCanvasNavigation/>
@@ -60,6 +78,9 @@ class App extends Component {
                             imageFirst={pragmatiker}
                             scndOption="Visionär"
                             imageScnd={hipster}
+                            idFirst="1q8djJuIcXo"
+                            idScnd="qkgbbFHQ7Yo"
+                            click={this.setModalId}
                         />
                     </Section>
                     <Section>
@@ -74,6 +95,9 @@ class App extends Component {
                             imageFirst={pragmatiker}
                             scndOption="Visionär"
                             imageScnd={hipster}
+                            idFirst="1q8djJuIcXo"
+                            idScnd="qkgbbFHQ7Yo"
+                            click={this.setModalId}
                         />
                     </Section>
                     <Section>
@@ -88,6 +112,9 @@ class App extends Component {
                             imageFirst={pragmatiker}
                             scndOption="Visionär"
                             imageScnd={hipster}
+                            idFirst="1q8djJuIcXo"
+                            idScnd="qkgbbFHQ7Yo"
+                            click={this.setModalId}
                         />
                     </Section>
                     <Section>
@@ -102,6 +129,9 @@ class App extends Component {
                             imageFirst={pragmatiker}
                             scndOption="Visionär"
                             imageScnd={hipster}
+                            idFirst="1q8djJuIcXo"
+                            idScnd="qkgbbFHQ7Yo"
+                            click={this.setModalId}
                         />
                     </Section>
                     <Section>
@@ -116,6 +146,9 @@ class App extends Component {
                             imageFirst={pragmatiker}
                             scndOption="Visionär"
                             imageScnd={hipster}
+                            idFirst="1q8djJuIcXo"
+                            idScnd="qkgbbFHQ7Yo"
+                            click={this.setModalId}
                         />
                     </Section>
                     <Section>
