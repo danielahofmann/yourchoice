@@ -34,19 +34,19 @@ class App extends Component {
         this.state = {
             modalVideoId: '',
             videoSection: 0,
+            //variable with default-video-id for the beginning of the video
             currentVideoId:'HsisZfKRWW4',
             video: [
                 {
+                    //object with videos and options for the decision
                     videoOption1: 'Visionär',
                     firstVideoId: 'gKUhOGgG6Wk',
                     videoOption2: 'Pragmatiker',
                     secondVideoId: '-zDnbfEHAL4'
                 },
                 {
-                    videoOption1: 'Hulapalu',
-                    firstVideoId: 'gKUhOGgG6Wk',
-                    videoOption2: 'Dongsidängsi',
-                    secondVideoId: '-zDnbfEHAL4'
+                    //object with the link to the end of the video
+                    endVideoId: 'gKUhOGgG6Wk',
                 }
             ]
         };
