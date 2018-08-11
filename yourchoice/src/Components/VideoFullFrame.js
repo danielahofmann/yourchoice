@@ -30,6 +30,7 @@ class VideoFullFrame extends Component {
             </div>
         )
     }
+    //thi is broken
     if({this.props.section} !== 2){
         _onEnd(event) {
             // access to player in all event handlers via event.target
