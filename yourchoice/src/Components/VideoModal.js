@@ -5,8 +5,8 @@ import offcanvas from "./OffCanvas";
 class VideoModal extends React.Component {
     render() {
         const opts = {
-            height: '100%',
-            width: '100%',
+            height: '50%',
+            width: '50%',
             playerVars: { // https://developers.google.com/youtube/player_parameters
                 autoplay: 1
             }
