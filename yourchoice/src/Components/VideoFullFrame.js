@@ -36,7 +36,7 @@ class VideoFullFrame extends Component {
         console.log(this.props);
         if(this.props.section < 1){
             document.querySelector('.hide').classList.remove('hide')
-            console.log(e);
+            return;
         }
         if(this.props.section == 1){
             this.props.endVideo();
@@ -44,6 +44,7 @@ class VideoFullFrame extends Component {
         }
         if(this.props.section == 2){
             document.querySelector('.VideoFullFrame').classList.add('hide');
+            return;
         }
     };
 }
