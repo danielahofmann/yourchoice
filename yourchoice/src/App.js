@@ -55,22 +55,25 @@ class App extends Component {
         console.log('Klick');
         console.log(e.currentTarget.id);
         console.log(this.state.videoSection);
+
         let counter = this.state.videoSection;
+        let nextSection = counter + 1;
+
         if(e.currentTarget.id == 1){
             this.setState({
                 currentVideoId: this.state.video[counter].firstVideoId
-            })
+            });
             this.setState({
-                videoSection: counter++
-            })
-            console.log(this.state.videoSection);
-            console.log(this.state.currentVideoId);
+                videoSection: nextSection
+            });
         } else {
 
         }
     };
 
   render() {
+      console.log(this.state.videoSection);
+      console.log(this.state.currentVideoId);
     return (
         <div className="App">
             <VideoChoice
