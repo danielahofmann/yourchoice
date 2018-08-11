@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 
 class VideoChoice extends Component {
 
+    constructor(props){
+        super(props);
+    }
+
     // Here are Melon-Videos
     IdsVisionär = {
         video1: 'gKUhOGgG6Wk',
@@ -19,8 +23,8 @@ class VideoChoice extends Component {
     render() {
         return (
             <div className="VideoChoice hide">
-                <button className="visionärButton button-orange" id='visionär'>Visionär</button>
-                <button className="pragmatikerButton button-orange" id='pragmatiker'>Pragmatiker</button>
+                <button className="visionärButton button-orange" id='visionär'>{this.props.firstButton}</button>
+                <button className="pragmatikerButton button-orange" id='pragmatiker'>{this.props.secondButton}</button>
             </div>
         );
     }

@@ -36,9 +36,9 @@ class App extends Component {
             currentVideoId: 'npdNujqSdkY',
             video: [
                 {
-                    videoOption1: 'visionär',
+                    videoOption1: 'Visionär',
                     firstVideoId: 'gKUhOGgG6Wk',
-                    videoOption2: 'pragmatiker',
+                    videoOption2: 'Pragmatiker',
                     secondVideoId: '-zDnbfEHAL4'
                 },
                 {
@@ -54,7 +54,10 @@ class App extends Component {
   render() {
     return (
         <div className="App">
-            <VideoChoice/>
+            <VideoChoice
+                firstButton={this.state.video[0].videoOption1}
+                secondButton={this.state.video[0].videoOption2}
+            />
             <VideoFullFrame
                 videoId={this.state.currentVideoId}
             />
