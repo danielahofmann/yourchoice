@@ -33,7 +33,8 @@ class App extends Component {
 
         this.state = {
             modalVideoId: '',
-            currentVideoId: 'npdNujqSdkY',
+            videoSection: 0,
+            currentVideoId:'HsisZfKRWW4',
             video: [
                 {
                     videoOption1: 'Visionär',
@@ -50,6 +51,24 @@ class App extends Component {
             ]
         };
     }
+    switchSection = (e) => {
+        console.log('Klick');
+        console.log(e.currentTarget.id);
+        console.log(this.state.videoSection);
+        let counter = this.state.videoSection;
+        if(e.currentTarget.id == 1){
+            this.setState({
+                currentVideoId: this.state.video[counter].firstVideoId
+            })
+            this.setState({
+                videoSection: counter++
+            })
+            console.log(this.state.videoSection);
+            console.log(this.state.currentVideoId);
+        } else {
+
+        }
+    };
 
   render() {
     return (
@@ -57,6 +76,7 @@ class App extends Component {
             <VideoChoice
                 firstButton={this.state.video[0].videoOption1}
                 secondButton={this.state.video[0].videoOption2}
+                click={this.switchSection}
             />
             <VideoFullFrame
                 videoId={this.state.currentVideoId}

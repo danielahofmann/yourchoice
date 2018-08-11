@@ -23,8 +23,8 @@ class VideoChoice extends Component {
     render() {
         return (
             <div className="VideoChoice hide">
-                <button className="visionärButton button-orange" id='visionär'>{this.props.firstButton}</button>
-                <button className="pragmatikerButton button-orange" id='pragmatiker'>{this.props.secondButton}</button>
+                <button className="visionärButton button-orange" id='1' onClick={this.props.click}>{this.props.firstButton}</button>
+                <button className="pragmatikerButton button-orange" id='2' onClick={this.props.click}>{this.props.secondButton}</button>
             </div>
         );
     }
