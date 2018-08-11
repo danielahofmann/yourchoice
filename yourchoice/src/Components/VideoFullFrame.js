@@ -4,8 +4,8 @@ import { X } from 'react-feather';
 import VideoChoice from './VideoChoice';
 
 class VideoFullFrame extends Component {
-    state = {
-        currentVideoId: ''
+    constructor(props){
+        super(props)
     }
 
     render() {
@@ -27,7 +27,7 @@ class VideoFullFrame extends Component {
                     </div>
                 </div>
                 <YouTube
-                    videoId="npdNujqSdkY"
+                    videoId={props.videoId}
                     opts={opts}
                     onReady={this._onReady}
                     onEnd={this._onEnd}

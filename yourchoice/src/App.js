@@ -28,13 +28,16 @@ let options = {
 
 class App extends Component {
     state= {
-        modalVideoId: ''
+        modalVideoId: '',
+        currentVideoId: 'npdNujqSdkY'
     };
 
   render() {
     return (
         <div className="App">
-            <VideoFullFrame/>
+            <VideoFullFrame
+                videoId={this.state.currentVideoId}
+            />
             <OffCanvas/>
 
             <header className="App-header">
