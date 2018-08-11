@@ -21,6 +21,9 @@ class VideoFullFrame extends Component {
         if(this.props.section == 1){
             this.props.endVideo();
         }
+        if(this.props.section == 2){
+            document.querySelector('.VideoFullFrame').classList.add('hide');
+        }
     };
 
     render() {

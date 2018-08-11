@@ -81,9 +81,9 @@ class App extends Component {
 
     setEndVideo = () => {
         this.setState({
-            currentVideoId: this.state.video[1].endVideoId
+            currentVideoId: this.state.video[1].endVideoId,
+            videoSection: 2
         });
-        document.querySelector('.VideoChoice').classList.add('hide');
     }
 
   render() {
