@@ -72,7 +72,12 @@ class App extends Component {
                     videoSection: nextSection
                 });
             }
+        } else {
+            console.log('Test');
+            document.querySelector('.VideoFullFrame').classList.add('hide');
         }
+
+        document.querySelector('.VideoChoice').classList.add('hide');
     };
 
   render() {

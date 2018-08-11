@@ -17,8 +17,6 @@ class VideoFullFrame extends Component {
         if(this.props.section <= 1){
             document.querySelector('.hide').classList.remove('hide')
             console.log(e);
-        } else {
-
         }
     };
 
