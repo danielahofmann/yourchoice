@@ -27,6 +27,10 @@ let options = {
 };
 
 class App extends Component {
+    state= {
+        modalVideoId: ''
+    };
+
   render() {
     return (
         <div className="App">
