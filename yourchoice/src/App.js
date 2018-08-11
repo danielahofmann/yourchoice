@@ -46,7 +46,7 @@ class App extends Component {
                 },
                 {
                     //object with the link to the end of the video
-                    endVideoId: 'gKUhOGgG6Wk',
+                    endVideoId: 'PGHqgKKW_BE',
                 }
             ]
         };
