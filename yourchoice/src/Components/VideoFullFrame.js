@@ -30,9 +30,10 @@ class VideoFullFrame extends Component {
             </div>
         )
     }
-    //thi is broken
-    if({this.props.section} !== 2){
-        _onEnd(event) {
+
+    _onEnd(event) {
+        if(this.props.section !== 2){
+
             // access to player in all event handlers via event.target
             document.querySelector('.hide').classList.remove('hide')
             console.log(event);
