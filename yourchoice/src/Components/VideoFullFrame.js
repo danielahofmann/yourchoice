@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import YouTube from 'react-youtube';
-import { X } from 'react-feather';
-import VideoChoice from './VideoChoice';
 
 class VideoFullFrame extends Component {
 
