@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
 import * as Icon from 'react-feather';
 import hero from './img/Konferenz Einstieg_Standbild.png';
 import './App.css';
