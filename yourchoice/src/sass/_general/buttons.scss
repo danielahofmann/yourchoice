@@ -33,3 +33,18 @@
   -moz-transition:All 1s ease;
   -o-transition:All 1s ease;
 }
+
+.icon-button{
+  float: right;
+  margin-top: 3rem;
+  margin-right: 3rem;
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+
+  svg{
+    width: 40px;
+    height: 40px;
+  }
+}

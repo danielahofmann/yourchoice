@@ -1,6 +1,6 @@
 import React from 'react';
 import YouTube from 'react-youtube';
-import offcanvas from "./OffCanvas";
+import { X } from 'react-feather';
 
 class VideoModal extends React.Component {
     render() {
@@ -14,8 +14,11 @@ class VideoModal extends React.Component {
 
         return (
             <div className="youtube-modal">
+                <button className="icon-button">
+                    <X />
+                </button>
                 <YouTube
-                    videoId="2g811Eo7K8U"
+                    videoId="aFO9FhxrP5s"
                     opts={opts}
                     onReady={this._onReady}
                 />
