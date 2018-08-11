@@ -39,6 +39,7 @@ class App extends Component {
   render() {
     return (
         <div className="App">
+            <VideoChoice/>
             <VideoFullFrame
                 videoId={this.state.currentVideoId}
             />
