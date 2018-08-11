@@ -8,7 +8,8 @@ class VideoModal extends React.Component {
             height: '50%',
             width: '50%',
             playerVars: { // https://developers.google.com/youtube/player_parameters
-                autoplay: 1
+                autoplay: 1,
+                hl: de
             }
         };
 
@@ -18,7 +19,7 @@ class VideoModal extends React.Component {
                     <X />
                 </button>
                 <YouTube
-                    videoId="aFO9FhxrP5s"
+                    videoId="61yrZiWPXsQ"
                     opts={opts}
                     onReady={this._onReady}
                 />
