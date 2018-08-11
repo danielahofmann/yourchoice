@@ -4,7 +4,7 @@ import { X } from 'react-feather';
 import VideoChoice from './VideoChoice';
 
 class VideoFullFrame extends Component {
-    
+
     constructor(props){
         super(props);
     }
@@ -30,12 +30,13 @@ class VideoFullFrame extends Component {
             </div>
         )
     }
-     _onEnd(event) {
-         // access to player in all event handlers via event.target
-         document.querySelector('.hide').classList.remove('hide')
-         console.log(event);
-
-     }
+    if({this.props.section} !== 2){
+        _onEnd(event) {
+            // access to player in all event handlers via event.target
+            document.querySelector('.hide').classList.remove('hide')
+            console.log(event);
+        }
+    }
 }
 
 export default VideoFullFrame;

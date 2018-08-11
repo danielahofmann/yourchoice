@@ -58,17 +58,18 @@ class App extends Component {
 
         let counter = this.state.videoSection;
         let nextSection = counter + 1;
-
-        if(e.currentTarget.id == 1){
-            this.setState({
-                currentVideoId: this.state.video[counter].firstVideoId,
-                videoSection: nextSection
-            });
-        } else {
-            this.setState({
-                currentVideoId: this.state.video[counter].secondVideoId,
-                videoSection: nextSection
-            });
+        if(typeof this.state.video[nextSection] != 'undefined') {
+            if(e.currentTarget.id == 1){
+                this.setState({
+                    currentVideoId: this.state.video[counter].firstVideoId,
+                    videoSection: nextSection
+                });
+            } else {
+                this.setState({
+                    currentVideoId: this.state.video[counter].secondVideoId,
+                    videoSection: nextSection
+                });
+            }
         }
     };
 
@@ -81,6 +82,7 @@ class App extends Component {
                 firstButton={this.state.video[this.state.videoSection].videoOption1}
                 secondButton={this.state.video[this.state.videoSection].videoOption2}
                 click={this.switchSection}
+                section={this.state.videoSection}
             />
             <VideoFullFrame
                 videoId={this.state.currentVideoId}
