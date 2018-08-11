@@ -55,13 +55,10 @@ class App extends Component {
 
     switchSection = (e) => {
         var audio  = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/click.mp3');
-        var audio2 = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/clickUp.mp3')
 
         audio.load();
         audio.play();
-        audio2.load();
-        audio2.play();
-        
+
         let counter = this.state.videoSection;
         let nextSection = counter + 1;
         if(typeof this.state.video[nextSection] != 'undefined') {
