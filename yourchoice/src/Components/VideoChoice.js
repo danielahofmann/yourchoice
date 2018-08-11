@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 
 class VideoChoice extends Component {
-    state = {
-        currentVideoId: ''
-    }
 
     // Here are Melon-Videos
     IdsVisionär = {
@@ -22,8 +19,8 @@ class VideoChoice extends Component {
     render() {
         return (
             <div className="VideoChoice hide">
-                <button className="visionärButton" id='visionär'>Visionär</button>
-                <button className="pragmatikerButton" id='pragmatiker'>Pragmatiker</button>
+                <button className="visionärButton button-orange" id='visionär'>Visionär</button>
+                <button className="pragmatikerButton button-orange" id='pragmatiker'>Pragmatiker</button>
             </div>
         );
     }

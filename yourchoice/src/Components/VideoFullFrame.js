@@ -20,12 +20,6 @@ class VideoFullFrame extends Component {
 
         return (
             <div className="VideoFullFrame">
-                <div className="VideoChoice hide">
-                    <div className="buttons">
-                        <button className="visionärButton button-orange" id='visionär'>Visionär</button>
-                        <button className="pragmatikerButton button-orange" id='pragmatiker'>Pragmatiker</button>
-                    </div>
-                </div>
                 <YouTube
                     videoId={this.props.videoId}
                     opts={opts}
