@@ -32,10 +32,6 @@ class VideoFullFrame extends Component {
                     onReady={this._onReady}
                     onEnd={this._onEnd}
                 />
-                <div className="VideoChoice hide">
-                    <button className="visionärButton" id='visionär'>Visionär</button>
-                    <button className="pragmatikerButton" id='pragmatiker'>Pragmatiker</button>
-                </div>
             </div>
         )
     }
