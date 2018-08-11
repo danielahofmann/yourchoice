@@ -55,13 +55,13 @@ class App extends Component {
         console.log('Klick');
         console.log(e.currentTarget.id);
         console.log(this.state.videoSection);
-        let counter = this.state.videoSection;
+        var counter = this.state.videoSection;
         if(e.currentTarget.id == 1){
+            counter++;
+            console.log(typeof counter);
             this.setState({
-                currentVideoId: this.state.video[counter].firstVideoId
-            })
-            this.setState({
-                videoSection: counter++
+                currentVideoId: this.state.video[counter].firstVideoId,
+                videoSection: counter
             })
             console.log(this.state.videoSection);
             console.log(this.state.currentVideoId);
