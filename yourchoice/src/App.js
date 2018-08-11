@@ -76,9 +76,15 @@ class App extends Component {
             console.log('Test');
             document.querySelector('.VideoFullFrame').classList.add('hide');
         }
-
         document.querySelector('.VideoChoice').classList.add('hide');
     };
+
+    setEndVideo = () => {
+        this.setState({
+            currentVideoId: this.state.video[1].endVideoId
+        });
+        document.querySelector('.VideoChoice').classList.add('hide');
+    }
 
   render() {
     return (
@@ -91,6 +97,7 @@ class App extends Component {
             <VideoFullFrame
                 videoId={this.state.currentVideoId}
                 section={this.state.videoSection}
+                endVideo={this.setEndVideo}
             />
             <OffCanvas/>
 

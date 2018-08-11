@@ -14,9 +14,12 @@ class VideoFullFrame extends Component {
 
     end = (e) => {
         console.log(this.props);
-        if(this.props.section <= 1){
+        if(this.props.section < 1){
             document.querySelector('.hide').classList.remove('hide')
             console.log(e);
+        }
+        if(this.props.section == 1){
+            this.props.endVideo();
         }
     };
 
