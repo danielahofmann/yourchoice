@@ -5,7 +5,7 @@ import VideoChoice from './VideoChoice';
 
 class VideoFullFrame extends Component {
     constructor(props){
-        super(props)
+        super(props);
     }
 
     render() {
@@ -27,7 +27,7 @@ class VideoFullFrame extends Component {
                     </div>
                 </div>
                 <YouTube
-                    videoId={props.videoId}
+                    videoId={this.props.videoId}
                     opts={opts}
                     onReady={this._onReady}
                     onEnd={this._onEnd}
