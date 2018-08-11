@@ -7,6 +7,9 @@ class VideoFullFrame extends Component {
 
     constructor(props){
         super(props);
+        this.state= {
+            section: this.props.section,
+        }
     }
 
     render() {
@@ -32,11 +35,13 @@ class VideoFullFrame extends Component {
     }
 
     _onEnd(event) {
-        if(this.props.section !== 2){
-
+        console.log(this.state)
+        if(this.state.section <= 1){
             // access to player in all event handlers via event.target
             document.querySelector('.hide').classList.remove('hide')
             console.log(event);
+        } else {
+
         }
     }
 }
