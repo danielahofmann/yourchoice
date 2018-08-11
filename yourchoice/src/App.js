@@ -27,12 +27,21 @@ let options = {
 };
 
 class App extends Component {
+
     constructor(props){
         super(props);
 
         this.state = {
             modalVideoId: '',
-            currentVideoId: 'npdNujqSdkY'
+            currentVideoId: 'npdNujqSdkY',
+            newVideo: [
+                {
+                    videoOption1: 'visionär',
+                    firstVideoId: 'gKUhOGgG6Wk',
+                    videoOption2: 'pragmatiker',
+                    secondVideoId: '-zDnbfEHAL4'
+                }
+            ]
         };
     }
 

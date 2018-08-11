@@ -4,6 +4,7 @@ import { X } from 'react-feather';
 import VideoChoice from './VideoChoice';
 
 class VideoFullFrame extends Component {
+    
     constructor(props){
         super(props);
     }
