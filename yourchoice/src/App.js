@@ -48,6 +48,12 @@ class App extends Component {
                 {
                     //object with the link to the end of the video
                     endVideoId: 'PGHqgKKW_BE',
+                    videoOption1: 'test',
+                    videoOption2: 'test',
+                },
+                {
+                    videoOption1: 'test',
+                    videoOption2: 'test',
                 }
             ]
         };
@@ -81,9 +87,11 @@ class App extends Component {
     };
 
     setEndVideo = () => {
+        document.querySelector('.VideoChoice').remove();
+
         this.setState({
             currentVideoId: this.state.video[1].endVideoId,
-            videoOver: true
+            //videoSection: 2
         });
     }
 
