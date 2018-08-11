@@ -51,11 +51,8 @@ class App extends Component {
             ]
         };
     }
-    switchSection = (e) => {
-        console.log('Klick');
-        console.log(e.currentTarget.id);
-        console.log(this.state.videoSection);
 
+    switchSection = (e) => {
         let counter = this.state.videoSection;
         let nextSection = counter + 1;
 
@@ -73,8 +70,6 @@ class App extends Component {
     };
 
   render() {
-      console.log(this.state.videoSection);
-      console.log(this.state.currentVideoId);
     return (
         <div className="App">
             <VideoChoice
