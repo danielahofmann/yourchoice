@@ -21,7 +21,7 @@ class VideoChoice extends Component {
 
     render() {
         return (
-            <div className="VideoChoice">
+            <div className="VideoChoice hide">
                 <button className="visionärButton" id='visionär'>Visionär</button>
                 <button className="pragmatikerButton" id='pragmatiker'>Pragmatiker</button>
             </div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import YouTube from 'react-youtube';
 import { X } from 'react-feather';
+import VideoChoice from './VideoChoice';
 
 class VideoFullFrame extends Component {
     state = {
@@ -19,14 +20,31 @@ class VideoFullFrame extends Component {
 
         return (
             <div className="VideoFullFrame">
+                <div className="VideoChoice hide">
+                    <div className="buttons">
+                        <button className="visionärButton button-orange" id='visionär'>Visionär</button>
+                        <button className="pragmatikerButton button-orange" id='pragmatiker'>Pragmatiker</button>
+                    </div>
+                </div>
                 <YouTube
-                    videoId="61yrZiWPXsQ"
+                    videoId="npdNujqSdkY"
                     opts={opts}
                     onReady={this._onReady}
+                    onEnd={this._onEnd}
                 />
+                <div className="VideoChoice hide">
+                    <button className="visionärButton" id='visionär'>Visionär</button>
+                    <button className="pragmatikerButton" id='pragmatiker'>Pragmatiker</button>
+                </div>
             </div>
-        );
+        )
     }
+     _onEnd(event) {
+         // access to player in all event handlers via event.target
+         document.querySelector('.hide').classList.remove('hide')
+         console.log(event);
+
+     }
 }
 
 export default VideoFullFrame;
