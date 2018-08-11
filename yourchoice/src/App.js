@@ -60,8 +60,6 @@ class App extends Component {
         let nextSection = counter + 1;
 
         if(e.currentTarget.id == 1){
-            counter++;
-            console.log(typeof counter);
             this.setState({
                 currentVideoId: this.state.video[counter].firstVideoId,
                 videoSection: nextSection
