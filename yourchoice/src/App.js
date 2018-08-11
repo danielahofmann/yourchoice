@@ -65,7 +65,10 @@ class App extends Component {
                 videoSection: nextSection
             });
         } else {
-
+            this.setState({
+                currentVideoId: this.state.video[counter].secondVideoId,
+                videoSection: nextSection
+            });
         }
     };
 
@@ -75,8 +78,8 @@ class App extends Component {
     return (
         <div className="App">
             <VideoChoice
-                firstButton={this.state.video[0].videoOption1}
-                secondButton={this.state.video[0].videoOption2}
+                firstButton={this.state.video[this.state.videoSection].videoOption1}
+                secondButton={this.state.video[this.state.videoSection].videoOption2}
                 click={this.switchSection}
             />
             <VideoFullFrame
