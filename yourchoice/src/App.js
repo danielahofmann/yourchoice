@@ -81,6 +81,7 @@ class App extends Component {
             />
             <VideoFullFrame
                 videoId={this.state.currentVideoId}
+                section={this.state.videoSection}
             />
             <OffCanvas/>
 
