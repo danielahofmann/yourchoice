@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
 import * as Icon from 'react-feather';
 import hero from './img/Konferenz Einstieg_Standbild.png';
 import './App.css';
@@ -53,6 +54,14 @@ class App extends Component {
     }
 
     switchSection = (e) => {
+        var audio  = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/click.mp3');
+        var audio2 = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/clickUp.mp3')
+
+        audio.load();
+        audio.play();
+        audio2.load();
+        audio2.play();
+        
         let counter = this.state.videoSection;
         let nextSection = counter + 1;
         if(typeof this.state.video[nextSection] != 'undefined') {
@@ -77,7 +86,6 @@ class App extends Component {
                 firstButton={this.state.video[this.state.videoSection].videoOption1}
                 secondButton={this.state.video[this.state.videoSection].videoOption2}
                 click={this.switchSection}
-                section={this.state.videoSection}
             />
             <VideoFullFrame
                 videoId={this.state.currentVideoId}
