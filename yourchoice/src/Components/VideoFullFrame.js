@@ -44,7 +44,7 @@ class VideoFullFrame extends Component {
             return;
         }
         if(this.props.section == 2){
-            $('.VideoFullFrame').fadeOut('slow');
+            $('.VideoFullFrame').delay(2000).fadeOut('slow');
             return;
         }
     };

@@ -109,7 +109,7 @@ class App extends Component {
 
         console.log(this.state.modalVideoId);
     };
-    
+
   render() {
     return (
         <div className="App">
@@ -128,7 +128,7 @@ class App extends Component {
             <VideoModal
                 videoId={this.state.modalVideoId}
             />
-            
+
             <header className="App-header">
                 <OffCanvasNavigation/>
             </header>
