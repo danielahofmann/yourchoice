@@ -346,3 +346,19 @@ header {
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%); }
+
+.VideoFullFrame {
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  position: absolute; }
+
+.VideoChoice {
+  background-color: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  z-index: 1001;
+  width: 100%;
+  height: 100%; }
+
+.hide {
+  display: none; }
