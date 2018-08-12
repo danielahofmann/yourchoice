@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import YouTube from 'react-youtube';
+import $ from "jquery";
 
 class VideoFullFrame extends Component {
 
@@ -43,7 +44,7 @@ class VideoFullFrame extends Component {
             return;
         }
         if(this.props.section == 2){
-            document.querySelector('.VideoFullFrame').classList.add('hide');
+            $('.VideoFullFrame').fadeOut('slow');
             return;
         }
     };
