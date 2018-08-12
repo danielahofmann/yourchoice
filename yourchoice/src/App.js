@@ -109,7 +109,7 @@ class App extends Component {
 
         console.log(this.state.modalVideoId);
     };
-    
+
   render() {
     return (
         <div className="App">
