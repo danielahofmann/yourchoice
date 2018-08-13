@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import mp3 from '../audio/button.mp3';
 
 class VideoChoice extends Component {
 
@@ -23,6 +24,7 @@ class VideoChoice extends Component {
     render() {
         return (
             <div className="VideoChoice hide">
+                <audio src={mp3} autoload/>
                 <button className="visionärButton button-orange" id='1' onClick={this.props.click}>{this.props.firstButton}</button>
                 <button className="pragmatikerButton button-orange" id='2' onClick={this.props.click}>{this.props.secondButton}</button>
             </div>

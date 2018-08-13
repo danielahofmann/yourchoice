@@ -15,7 +15,6 @@ import hipster from './img/Vision Hipster_Standbild.png';
 import pragmatiker from './img/Vision Pragmatiker_Standbild.png';
 import $ from "jquery";
 
-
 let options = {
     sectionClassName:       'section',
     anchors:                ['hero', 'section1', 'section2', 'section3', 'section4', 'section5', 'footer'],
@@ -60,10 +59,8 @@ class App extends Component {
     }
 
     switchSection = (e) => {
-        var audio  = new Audio('audio/button.mp3');
 
-        audio.load();
-        audio.play();
+        document.querySelector('audio').play();
 
         let counter = this.state.videoSection;
         let nextSection = counter + 1;
