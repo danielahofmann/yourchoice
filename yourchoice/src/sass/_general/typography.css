@@ -15,6 +15,12 @@ h1 {
   font-weight: 700;
   font-size: 2rem;
   color: #3399FF; }
+  @media (max-width: 1075px) {
+    .headline2 {
+      font-size: 1.5rem; } }
+  @media (max-width: 360px) {
+    .headline2 {
+      font-size: 1rem; } }
 
 .headline3 {
   font-family: "Raleway", sans-serif;
@@ -22,12 +28,18 @@ h1 {
   font-size: 2rem;
   color: #FA9917;
   text-align: center; }
+  @media (max-width: 500px) {
+    .headline3 {
+      font-size: 1.5rem; } }
 
 p {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   color: #4A4A4A; }
+  @media (max-width: 360px) {
+    p {
+      font-size: 0.9rem; } }
 
 .background-number {
   font-family: "Raleway", sans-serif;
@@ -60,6 +72,12 @@ p {
     -moz-transform: scale(1.025);
     -o-transform: scale(1.025);
     -ms-transform: scale(1.025); }
+  @media (max-width: 450px) {
+    .offcanvas-link {
+      font-size: 3rem; } }
+  @media (max-width: 340px) {
+    .offcanvas-link {
+      font-size: 2rem; } }
 
 .hero-headline {
   position: absolute;

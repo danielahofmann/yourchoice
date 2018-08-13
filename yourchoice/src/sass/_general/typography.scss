@@ -14,12 +14,23 @@ h1{
 
 .headline2{
   @include text-styling($primary-font, $bold, 2rem, $blue);
+
+  @include custom-max(1075px){
+    font-size: 1.5rem;
+  }
+
+  @include custom-max(360px){
+    font-size: 1rem;
+  }
 }
 
 .headline3{
   @include text-styling($secondary-font, $bold, 2rem, $orange);
   text-align: center;
 
+  @include custom-max(500px){
+    font-size: 1.5rem;
+  }
 }
 
 h4{
@@ -32,6 +43,10 @@ h5{
 
 p{
   @include text-styling($secondary-font, $regular, 1rem, $darkgrey);
+
+  @include custom-max(360px){
+    font-size: 0.9rem;
+  }
 }
 
 .background-number{
@@ -61,6 +76,14 @@ p{
     -moz-transform: scale(1.025);
     -o-transform: scale(1.025);
     -ms-transform: scale(1.025);
+  }
+
+  @include custom-max(450px){
+    font-size: 3rem;
+  }
+
+  @include custom-max(340px){
+    font-size: 2rem;
   }
 }
 
