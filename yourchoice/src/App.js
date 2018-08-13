@@ -60,7 +60,7 @@ class App extends Component {
     }
 
     switchSection = (e) => {
-        var audio  = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/click.mp3');
+        var audio  = new Audio('audio/button.wav');
 
         audio.load();
         audio.play();
