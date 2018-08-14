@@ -48,10 +48,10 @@ class App extends Component {
                 },
                 {
                     //object with videos and options for the decision
-                    videoOption1: 'Hipster',
-                    firstVideoId: 'fxRSscFpcIg',
-                    videoOption2: 'Pragmatiker',
-                    secondVideoId: 'dXCcts7bJps'
+                    videoOption1: '',
+                    firstVideoId: '',
+                    videoOption2: 'Ende',
+                    secondVideoId: 'gVMixn5ZzHs'
                 },
                 {
                     //object with the link to the end of the video
@@ -116,6 +116,17 @@ class App extends Component {
         console.log(this.state.modalVideoId);
     };
 
+    /* [TODO]
+
+        - check on click for section 2, which button was pressed beforehand, or maybe change state on first click
+        - switch videoOption1 to either hipster or pragmatiker and also change the needed ID
+        - If someone clicks to end, then delete the fourth section, so next Section will be the empty section
+        - if someone watches the other one as hipster for example, then only change the logic for so many sections,
+        so the end video plays automatically
+        - change the videochoice component to dynamic props for button names and images which takes the data from state,
+        which also needs to be updated on click
+        
+     */
   render() {
     return (
         <div className="App">
