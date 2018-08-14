@@ -35,18 +35,18 @@ class App extends Component {
             videoOver: false,
             videoSection: 0,
             //variable with default-video-id for the beginning of the video
-            currentVideoId:'HsisZfKRWW4',
+            currentVideoId:'81asrrdHaZ8',
             video: [
                 {
                     //object with videos and options for the decision
                     videoOption1: 'Visionär',
-                    firstVideoId: 'gKUhOGgG6Wk',
+                    firstVideoId: '6Wi6A1xURr0',
                     videoOption2: 'Pragmatiker',
-                    secondVideoId: '-zDnbfEHAL4'
+                    secondVideoId: '3RwNz9C4I6s'
                 },
                 {
                     //object with the link to the end of the video
-                    endVideoId: 'PGHqgKKW_BE',
+                    endVideoId: '70q5z7X87G0',
                     videoOption1: 'test',
                     videoOption2: 'test',
                 },
