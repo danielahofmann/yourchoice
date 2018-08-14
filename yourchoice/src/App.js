@@ -13,8 +13,8 @@ import ContentRight from './Components/ContentRight';
 import Footer from './Components/Footer';
 import VideoModal from './Components/VideoModal';
 import {SectionsContainer, Section} from 'react-fullpage';
-import hipster from './img/Vision Hipster_Standbild.png';
-import pragmatiker from './img/Vision Pragmatiker_Standbild.png';
+import pragmatiker from './img/Vision Hipster_Standbild.png';
+import hipster from './img/Vision Pragmatiker_Standbild.png';
 import $ from "jquery";
 
 let options = {
@@ -41,10 +41,17 @@ class App extends Component {
             video: [
                 {
                     //object with videos and options for the decision
-                    videoOption1: 'Visionär',
-                    firstVideoId: '6Wi6A1xURr0',
+                    videoOption1: 'Hipster',
+                    firstVideoId: 'fxRSscFpcIg',
                     videoOption2: 'Pragmatiker',
-                    secondVideoId: '3RwNz9C4I6s'
+                    secondVideoId: 'dXCcts7bJps'
+                },
+                {
+                    //object with videos and options for the decision
+                    videoOption1: 'Hipster',
+                    firstVideoId: 'fxRSscFpcIg',
+                    videoOption2: 'Pragmatiker',
+                    secondVideoId: 'dXCcts7bJps'
                 },
                 {
                     //object with the link to the end of the video
