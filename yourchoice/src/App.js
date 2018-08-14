@@ -37,7 +37,7 @@ class App extends Component {
             videoOver: false,
             videoSection: 0,
             //variable with default-video-id for the beginning of the video
-            currentVideoId:'81asrrdHaZ8',
+            currentVideoId:'3-VSd8EKI4Q',
             video: [
                 {
                     //object with videos and options for the decision
@@ -48,7 +48,7 @@ class App extends Component {
                 },
                 {
                     //object with the link to the end of the video
-                    endVideoId: '70q5z7X87G0',
+                    endVideoId: 'gVMixn5ZzHs',
                     videoOption1: 'test',
                     videoOption2: 'test',
                 },
@@ -143,18 +143,15 @@ class App extends Component {
                     </Section>
                     <Section>
                         <p className="background-number number-top-right">1</p>
-                        <ContentLeft
-                            headline="Visionär oder Pragmatiker?"
+                        <ContentSingleLeft
+                            headline="Der Beginn"
                             description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                             tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
                             accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
                             est Lorem ipsum dolor sit amet."
                             firstOption="Pragmatiker"
                             imageFirst={pragmatiker}
-                            scndOption="Visionär"
-                            imageScnd={hipster}
-                            idFirst="1q8djJuIcXo"
-                            idScnd="qkgbbFHQ7Yo"
+                            idFirst="3-VSd8EKI4Q"
                             click={this.setModalId}
                         />
                     </Section>
