@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
     IMPORTS
  */
@@ -407,3 +408,49 @@ header {
 
 .hide {
   display: none; }
+
+.button-image {
+  width: 40%;
+  height: auto; }
+  .button-image:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5); }
+
+.image-container {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%; }
+
+.visionärButton {
+  width: 45%;
+  height: auto;
+  margin-right: 2rem; }
+  .visionärButton:hover {
+    background-color: rgba(0, 0, 0, 0.5); }
+
+.pragmatikerButton {
+  width: 45%;
+  height: auto; }
+  .pragmatikerButton:hover {
+    background-color: rgba(0, 0, 0, 0.5); }
+
+#hip-container p {
+  display: inline-block;
+  position: relative;
+  bottom: 30px;
+  left: 0px;
+  visibility: hidden; }
+  #hip-container p:hover {
+    visibility: visible; }
+
+#prag-container p {
+  display: inline-block;
+  position: relative;
+  bottom: 30px;
+  left: 0px;
+  visibility: hidden; }
+  #prag-container p:hover {
+    visibility: visible; }

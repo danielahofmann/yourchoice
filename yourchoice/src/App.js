@@ -114,6 +114,8 @@ class App extends Component {
                 firstButton={this.state.video[this.state.videoSection].videoOption1}
                 secondButton={this.state.video[this.state.videoSection].videoOption2}
                 click={this.switchSection}
+                imagePrag={pragmatiker}
+                imageHip={hipster}
             />
             <VideoFullFrame
                 videoId={this.state.currentVideoId}
