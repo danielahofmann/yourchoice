@@ -299,8 +299,9 @@ header {
 .visionärButton{
     width: 45%;
     height: auto;
+    transition: All 1s ease;
     &:hover {
-      background-color: rgba(0, 0, 0, 0.5);
+        transform: scale(1.1, 1.1);
     }
     margin-right: 2rem;
 }
@@ -308,29 +309,8 @@ header {
 .pragmatikerButton{
     width: 45%;
     height: auto;
+    transition: All 1s ease;
     &:hover {
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-}
-
-#hip-container p {
-    display:inline-block;
-    position:relative;
-    bottom:30px;
-    left:0px;
-    visibility:hidden;
-    &:hover{
-        visibility:visible;
-    }
-}
-
-#prag-container p {
-    display:inline-block;
-    position:relative;
-    bottom:30px;
-    left:0px;
-    visibility:hidden;
-    &:hover{
-        visibility:visible;
+        transform: scale(1.1, 1.1);
     }
 }
