@@ -91,7 +91,7 @@ header {
   position: relative;
   margin-left: 60%;
   overflow: hidden;
-  
+
   @include custom-max(1075px) {
     display: block;
     width: 100%;
@@ -315,6 +315,7 @@ header {
 
     .overlay {
       background-color: rgba(0, 0, 0, 0.5);
+      cursor: pointer;
     }
   }
 }
@@ -347,4 +348,5 @@ header {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0);
+  transition: All 1s ease;
 }
