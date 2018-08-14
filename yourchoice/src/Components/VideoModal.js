@@ -10,6 +10,13 @@ class VideoModal extends React.Component {
         $(modal).fadeOut({queue: false, duration: 250});
         $(modal).css({opacity: '0'});
     };
+    _onPlay = (event) => {
+        console.log(document.getElementsByClassName('icon-button'));
+        document.querySelector('.icon-button').onclick = () => {
+            console.log('clicked');
+            event.target.pauseVideo();
+        }
+    }
 
     _onEnd = () => {
         this.hideModal();
@@ -35,6 +42,7 @@ class VideoModal extends React.Component {
                     opts={opts}
                     onReady={this._onReady}
                     onEnd={this._onEnd}
+                    onPlay={this._onPlay}
                 />
             </div>
         );
