@@ -7,6 +7,8 @@ import VideoFullFrame from './Components/VideoFullFrame';
 import OffCanvas from './Components/OffCanvas';
 import OffCanvasNavigation from './Components/OffCanvasNavigation';
 import ContentLeft from './Components/ContentLeft';
+import ContentSingleLeft from './Components/ContentSingleLeft';
+import ContentSingleRight from './Components/ContentSingleRight';
 import ContentRight from './Components/ContentRight';
 import Footer from './Components/Footer';
 import VideoModal from './Components/VideoModal';
@@ -17,7 +19,7 @@ import $ from "jquery";
 
 let options = {
     sectionClassName:       'section',
-    anchors:                ['hero', 'section1', 'section2', 'section3', 'section4', 'section5', 'footer'],
+    anchors:                ['hero', 'section1', 'section2', 'section3', 'footer'],
     scrollBar:              false,
     navigation:             true,
     verticalAlign:          false,
@@ -175,40 +177,6 @@ class App extends Component {
                     </Section>
                     <Section>
                         <p className="background-number number-bottom-right">3</p>
-                        <ContentLeft
-                            headline="Visionär oder Pragmatiker?"
-                            description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-                            est Lorem ipsum dolor sit amet."
-                            firstOption="Pragmatiker"
-                            imageFirst={pragmatiker}
-                            scndOption="Visionär"
-                            imageScnd={hipster}
-                            idFirst="1q8djJuIcXo"
-                            idScnd="qkgbbFHQ7Yo"
-                            click={this.setModalId}
-                        />
-                    </Section>
-                    <Section>
-                        <p className="background-number number-top-left">4</p>
-                        <ContentRight
-                            headline="something"
-                            description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-                            est Lorem ipsum dolor sit amet."
-                            firstOption="Pragmatiker"
-                            imageFirst={pragmatiker}
-                            scndOption="Visionär"
-                            imageScnd={hipster}
-                            idFirst="1q8djJuIcXo"
-                            idScnd="qkgbbFHQ7Yo"
-                            click={this.setModalId}
-                        />
-                    </Section>
-                    <Section>
-                        <p className="background-number number-top-right">5</p>
                         <ContentLeft
                             headline="Visionär oder Pragmatiker?"
                             description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
