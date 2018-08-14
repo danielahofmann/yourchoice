@@ -26,14 +26,14 @@ class VideoChoice extends Component {
             <div className="VideoChoice hide">
                 <audio src={mp3} autoload/>
                 <div className="image-container">
-                    <div className="choice-container" onClick={this.props.click}>
-                        <input type="image" src={this.props.imageHip} alt="Visionär" id='1' className="choice-button hover" />
+                    <div className="choice-container" onClick={this.props.click} id="1">
+                        <input type="image" src={this.props.imageHip} alt="Visionär" className="choice-button hover" />
                         <div className="overlay">
                             <p className="choice-text">Visionär</p>
                         </div>
                     </div>
-                    <div className="choice-container right-container" onClick={this.props.click}>
-                        <input type="image" src={this.props.imagePrag} alt="Pragmatiker" id='2' className="choice-button hover" />
+                    <div className="choice-container right-container" onClick={this.props.click} id="2">
+                        <input type="image" src={this.props.imagePrag} alt="Pragmatiker" className="choice-button hover" />
                         <div className="overlay">
                             <p className="choice-text">Pragmatiker</p>
                         </div>
