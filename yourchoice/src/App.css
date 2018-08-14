@@ -263,7 +263,8 @@ header {
   width: 40%;
   height: 100%;
   position: relative;
-  margin-left: 60%; }
+  margin-left: 60%;
+  overflow: hidden; }
   @media (max-width: 1075px) {
     .content-images {
       display: block;

@@ -90,7 +90,8 @@ header {
   height: 100%;
   position: relative;
   margin-left: 60%;
-
+  overflow: hidden;
+  
   @include custom-max(1075px) {
     display: block;
     width: 100%;
