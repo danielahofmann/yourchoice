@@ -2,6 +2,7 @@
   "name": "yourchoice",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://staging.danielahofmann.com/",
   "dependencies": {
     "@fullpage/react-fullpage": "0.0.5",
     "bootstrap": "^4.1.2",
