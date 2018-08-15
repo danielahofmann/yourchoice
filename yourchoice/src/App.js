@@ -16,11 +16,12 @@ import {SectionsContainer, Section} from 'react-fullpage';
 import pragmatiker from './img/Vision Hipster_Standbild.png';
 import hipster from './img/Vision Pragmatiker_Standbild.png';
 import end from './img/Konferenz Ausstieg_Standbild.png';
+import intro from './img/Konferenz Einstieg_Standbild.png';
 import $ from "jquery";
 
 let options = {
     sectionClassName:       'section',
-    anchors:                ['hero', 'section1', 'section2', 'section3', 'footer'],
+    anchors:                ['hero', 'anfang', 'pragmatiker', 'hipster', 'ende', 'footer'],
     scrollBar:              false,
     navigation:             true,
     verticalAlign:          false,
@@ -167,7 +168,7 @@ class App extends Component {
 
         console.log(this.state.modalVideoId);
     };
-    
+
   render() {
     return (
         <div className="App">
@@ -204,48 +205,57 @@ class App extends Component {
                     <Section>
                         <p className="background-number number-top-right">1</p>
                         <ContentSingleLeft
-                            headline="Der Beginn"
-                            description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-                            est Lorem ipsum dolor sit amet."
-                            firstOption="Pragmatiker"
-                            imageFirst={pragmatiker}
+                            headline="Der Anfang"
+                            description="Großes Kino, epische Sounds oder doch lieber auf das Wesentliche konzentrieren?
+                            Jede Videoproduktion beginnt mit einer Idee. Dank mehrjähriger Erfahrung im Bereich Online
+                            Publishing und unserer Faszination für tolle Bilder, erstellen wir audiovisuellen Content auf
+                            höchstem Niveau. Agenturarbeit und Contentcreations - Alles aus einer Hand."
+                            firstOption="Der Einstieg"
+                            imageFirst={intro}
                             idFirst="3-VSd8EKI4Q"
                             click={this.setModalId}
                         />
                     </Section>
                     <Section>
                         <p className="background-number number-top-left">2</p>
-                        <ContentRight
-                            headline="something"
-                            description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-                            est Lorem ipsum dolor sit amet."
+                        <ContentSingleRight
+                            headline="Der Pragmatiker"
+                            description="Ein Imagefilm ist die perfekte Mischung aus Werbespot und Reportage. Er porträtiert
+                            nicht nur ein Unternehmen, eine Marke oder ein Produkt, sondern schafft dies auf besonders
+                            authentische, spannende und inspirierende Weise. Ziel ist es dabei, dem Zuschauer lange im
+                            Gedächtnis zu bleiben, vielleicht sogar mit einem Augenzwinkern."
                             firstOption="Pragmatiker"
                             imageFirst={pragmatiker}
-                            scndOption="Visionär"
-                            imageScnd={hipster}
-                            idFirst="1q8djJuIcXo"
-                            idScnd="qkgbbFHQ7Yo"
+                            idFirst="dXCcts7bJps"
                             click={this.setModalId}
                         />
                     </Section>
                     <Section>
                         <p className="background-number number-bottom-right">3</p>
-                        <ContentLeft
-                            headline="Visionär oder Pragmatiker?"
-                            description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-                            est Lorem ipsum dolor sit amet."
-                            firstOption="Pragmatiker"
-                            imageFirst={pragmatiker}
-                            scndOption="Visionär"
-                            imageScnd={hipster}
-                            idFirst="1q8djJuIcXo"
-                            idScnd="qkgbbFHQ7Yo"
+                        <ContentSingleLeft
+                            headline="Der Hipster"
+                            description="Inhalte, die sich wie ein Lauffeuer verbreiten und den Zuschauer vom Hocker
+                            hauen? Wir setzen auf ungewohnte Blickwinkel, packendes Sounddesign und den gezielten
+                            Einsatz von Stielmitteln wie Slow Motion oder Drohnenflügen. Eine Maßgeschneiderte
+                            Bewegtbildproduktion nach den Bedürfnissen der Kanäle und Zielgruppen."
+                            firstOption="Hipster"
+                            imageFirst={hipster}
+                            idFirst="fxRSscFpcIg"
+                            click={this.setModalId}
+                        />
+                    </Section>
+                    <Section>
+                        <p className="background-number number-top-left">2</p>
+                        <ContentSingleRight
+                            headline="Zum Abschluss"
+                            description="Haben sie ihre Zielgruppe exakt definiert und den perfekten Weg gefunden diese
+                            zu erreichen? Wir glauben zwar an die Macht von Bildern, wissen aber auch wo und wann sie
+                            Ihre Zuschauer am besten erreichen. Wir recherchieren, analysieren und erstellen gemeinsam
+                            mit Ihnen ein Konzept für Ihre individuelle Medienproduktion. Lassen sie uns Ziele setzen,
+                            intelligente Wege planen und losmarschieren!"
+                            firstOption="Ende"
+                            imageFirst={end}
+                            idFirst="gVMixn5ZzHs"
                             click={this.setModalId}
                         />
                     </Section>

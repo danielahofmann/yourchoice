@@ -75,6 +75,8 @@ header {
     display: block;
     position: relative;
     width: 100%;
+    top: 0;
+    transform: none;
   }
 
   @include custom-max(500px) {

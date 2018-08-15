@@ -251,7 +251,9 @@ header {
     .content-text {
       display: block;
       position: relative;
-      width: 100%; } }
+      width: 100%;
+      top: 0;
+      transform: none; } }
   @media (max-width: 500px) {
     .content-text {
       padding: 2rem 2rem; } }
