@@ -15,6 +15,7 @@ import VideoModal from './Components/VideoModal';
 import {SectionsContainer, Section} from 'react-fullpage';
 import pragmatiker from './img/Vision Hipster_Standbild.png';
 import hipster from './img/Vision Pragmatiker_Standbild.png';
+import end from './img/Konferenz Ausstieg_Standbild.png';
 import $ from "jquery";
 
 let options = {
@@ -34,17 +35,22 @@ class App extends Component {
 
         this.state = {
             modalVideoId: '',
+            firstImage: hipster,
+            secondImage: pragmatiker,
             videoOver: false,
             videoSection: 0,
             //variable with default-video-id for the beginning of the video
             currentVideoId:'3-VSd8EKI4Q',
+            endVideo: false,
             video: [
                 {
                     //object with videos and options for the decision
                     videoOption1: 'Hipster',
                     firstVideoId: 'fxRSscFpcIg',
+                    firstImage: {hipster},
                     videoOption2: 'Pragmatiker',
-                    secondVideoId: 'dXCcts7bJps'
+                    secondVideoId: 'dXCcts7bJps',
+                    firstImage: {pragmatiker},
                 },
                 {
                     //object with videos and options for the decision
@@ -73,31 +79,77 @@ class App extends Component {
 
         let counter = this.state.videoSection;
         let nextSection = counter + 1;
+        let videoId = '';
+        let firstImage = '';
+        let secondImage = '';
+
         if(typeof this.state.video[nextSection] != 'undefined') {
-            if(e.currentTarget.id == 1){
+            if(this.state.videoSection == 0) {
+                let videoCopy = this.state.video;
+
+                if (e.currentTarget.id == 1) {
+                    //we clicked on hipster so we may want to watch pragmatiker also
+                    videoCopy[nextSection].videoOption1 = 'Pragmatiker';
+                    videoCopy[nextSection].firstVideoId = 'ogBbANEot9A';
+                    videoId = this.state.video[counter].firstVideoId;
+                    firstImage = pragmatiker;
+                    secondImage = end;
+                }
+
+                if (e.currentTarget.id == 2) {
+                    //we clicked on prag so we may want to watch hipster also
+                    videoCopy[nextSection].videoOption1 = 'Hipster';
+                    videoCopy[nextSection].firstVideoId = 'yaDVVjTKUfM';
+                    videoId = this.state.video[counter].secondVideoId;
+                    firstImage = hipster;
+                    secondImage = end;
+                }
+
+                console.log(this.state.video[nextSection]);
+
+                //saving all the data in state
                 this.setState({
-                    currentVideoId: this.state.video[counter].firstVideoId,
-                    videoSection: nextSection
-                });
-            } else {
-                this.setState({
-                    currentVideoId: this.state.video[counter].secondVideoId,
-                    videoSection: nextSection
+                    currentVideoId: videoId,
+                    videoSection: nextSection,
+                    video: videoCopy,
+                    firstImage: firstImage,
+                    secondImage: secondImage
                 });
             }
+
+            if(this.state.videoSection == 1) {
+                let videoCopy = this.state.video;
+
+                //id 1 means to watch again hipster or pragmatiker then next section will be the end of the video
+                if (e.currentTarget.id == 1) {
+                    this.setState({
+                        currentVideoId: this.state.video[counter].firstVideoId,
+                        videoSection: nextSection,
+                    });
+                } else {
+                    //this means, we're already watching the end, so we doesn't need another end.
+
+                    this.setState({
+                        currentVideoId: this.state.video[counter].secondVideoId,
+                        videoSection: nextSection,
+                        endVideo: true,
+                    });
+                }
+            }
         } else {
-            console.log('Test');
             document.querySelector('.VideoFullFrame').classList.add('hide');
         }
         document.querySelector('.VideoChoice').classList.add('hide');
     };
 
     setEndVideo = () => {
-        document.querySelector('.VideoChoice').remove();
+        //document.querySelector('.VideoChoice').remove();
+        let counter = this.state.videoSection;
+        let nextSection = counter + 1;
 
         this.setState({
-            currentVideoId: this.state.video[1].endVideoId,
-            videoSection: 2
+            currentVideoId: this.state.video[2].endVideoId,
+            videoSection: nextSection,
         });
     }
 
@@ -115,18 +167,7 @@ class App extends Component {
 
         console.log(this.state.modalVideoId);
     };
-
-    /* [TODO]
-
-        - check on click for section 2, which button was pressed beforehand, or maybe change state on first click
-        - switch videoOption1 to either hipster or pragmatiker and also change the needed ID
-        - If someone clicks to end, then delete the fourth section, so next Section will be the empty section
-        - if someone watches the other one as hipster for example, then only change the logic for so many sections,
-        so the end video plays automatically
-        - change the videochoice component to dynamic props for button names and images which takes the data from state,
-        which also needs to be updated on click
-        
-     */
+    
   render() {
     return (
         <div className="App">
@@ -134,14 +175,15 @@ class App extends Component {
                 firstButton={this.state.video[this.state.videoSection].videoOption1}
                 secondButton={this.state.video[this.state.videoSection].videoOption2}
                 click={this.switchSection}
-                imagePrag={pragmatiker}
-                imageHip={hipster}
+                firstImage={this.state.firstImage}
+                secondImage={this.state.secondImage}
             />
             <VideoFullFrame
                 videoId={this.state.currentVideoId}
                 section={this.state.videoSection}
                 endVideo={this.setEndVideo}
                 videoOver={this.state.videoOver}
+                alreadyWatchedEndVideo={this.state.endVideo}
             />
             <OffCanvas/>
             <VideoModal

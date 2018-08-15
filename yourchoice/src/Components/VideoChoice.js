@@ -7,35 +7,21 @@ class VideoChoice extends Component {
         super(props);
     }
 
-    // Here are Melon-Videos
-    IdsVisionär = {
-        video1: 'gKUhOGgG6Wk',
-        video2: 'he-1cmJhD54',
-        video3: 'PGHqgKKW_BE',
-    }
-
-    // Here are Pineapple-Videos
-    IdsPragmatiker = {
-        video1: '-zDnbfEHAL4',
-        video2: 'AxKFaU32Ia4',
-        video3: 'HsisZfKRWW4',
-    }
-
     render() {
         return (
             <div className="VideoChoice hide">
                 <audio src={mp3} autoload/>
                 <div className="image-container">
                     <div className="choice-container" onClick={this.props.click} id="1">
-                        <input type="image" src={this.props.imageHip} alt="Visionär" className="choice-button hover" />
+                        <input type="image" src={this.props.firstImage} alt={this.props.firstButton} className="choice-button hover" />
                         <div className="overlay">
-                            <p className="choice-text">Visionär</p>
+                            <p className="choice-text">{this.props.firstButton}</p>
                         </div>
                     </div>
                     <div className="choice-container right-container" onClick={this.props.click} id="2">
-                        <input type="image" src={this.props.imagePrag} alt="Pragmatiker" className="choice-button hover" />
+                        <input type="image" src={this.props.secondImage} alt={this.props.secondButton} className="choice-button hover" />
                         <div className="overlay">
-                            <p className="choice-text">Pragmatiker</p>
+                            <p className="choice-text">{this.props.secondButton}</p>
                         </div>
                     </div>
 

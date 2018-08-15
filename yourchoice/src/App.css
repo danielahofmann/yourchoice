@@ -244,7 +244,9 @@ header {
   width: 60%;
   padding: 3rem 2rem;
   display: inline-block;
-  position: absolute; }
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
   @media (max-width: 1075px) {
     .content-text {
       display: block;

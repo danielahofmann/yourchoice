@@ -68,6 +68,8 @@ header {
   padding: 3rem 2rem;
   display: inline-block;
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 
   @include custom-max(1075px) {
     display: block;

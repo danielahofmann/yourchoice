@@ -34,16 +34,26 @@ class VideoFullFrame extends Component {
     }
 
     end = (e) => {
-        console.log(this.props);
-        if(this.props.section < 1){
-            document.querySelector('.hide').classList.remove('hide')
-            return;
-        }
-        if(this.props.section == 1){
-            this.props.endVideo();
+        console.log(this.props.section);
+
+        if(this.props.section < 2){
+            document.querySelector('.hide').classList.remove('hide');
+            console.log(this.props.section);
             return;
         }
         if(this.props.section == 2){
+
+            console.log(this.props.alreadyWatchedEndVideo)
+            if (this.props.alreadyWatchedEndVideo == true){
+                console.log('truee')
+                $('.VideoFullFrame').delay(2000).fadeOut('slow');
+            } else {
+                this.props.endVideo();
+            }
+            return;
+        }
+        if(this.props.section == 3){
+            console.log(this.props.section);
             $('.VideoFullFrame').delay(2000).fadeOut('slow');
             return;
         }
